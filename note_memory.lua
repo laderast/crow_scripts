@@ -1,9 +1,9 @@
---- digital analog shift register
--- four stages of delay for an incoming cv
--- input 1: cv to delay
--- input 2: trigger to capture input & shift
--- output 1-4: newest to oldest output
--- ii: 6 stages of ASR via just friends
+--- note memory - based on digital analog shift register
+-- stores last 8 notes in a buffer and emits them on outputs 1 and 3
+-- input 1: cv 
+-- input 2: trigger to capture input & shift (usually gate)
+-- output 1: random note (1 octave below original)
+-- output 3: random note (1 octave above original)
 
 reg = {}
 reg_LEN = 8
